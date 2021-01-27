@@ -1,9 +1,21 @@
-"""Should Joey go to class"""
+"""Should you go to class"""
 
-import random
-print(random.randint(0,1))
+name: str = input("What is your name? ")
 
-if randit = 0
-    print("No")
-if randint = 1
-    print("Yes")
+Q1: str = str(input("Are you tired right now? "))
+Q2: str = str(input("Do you hate class? "))
+Q3: str = str(input("Is you laptop too far away? "))
+
+score = 0
+
+if input(Q1) = yes
+    score = score + 1
+if input(Q2) = yes
+    score = score + 1
+if input(Q3) = yes
+    score = score + 1
+
+if score >= 2
+    print("You should not go to class " + " " + name)
+if score < 2
+    print("You should go to class" + " " + name)
