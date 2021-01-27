@@ -2,9 +2,9 @@
 
 name: str = input("What is your name? ")
 
-Q1: str = str(input("Are you tired right now? "))
-Q2: str = str(input("Do you hate class? "))
-Q3: str = str(input("Is you laptop too far away? "))
+Q1: str = (input("Are you tired right now? "))
+Q2: str = (input("Do you hate class? "))
+Q3: str = (input("Is you laptop too far away? "))
 
 score = int(0)
 
