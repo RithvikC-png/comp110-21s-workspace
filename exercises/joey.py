@@ -16,6 +16,6 @@ if input(Q3) = str("yes")
     score = score + 1
 
 if score >= 2
-    print("You should not go to class " + " " + name)
+    print("You should not go to class " + name)
 if score < 2
-    print("You should go to class" + " " + name)
+    print("You should go to class " + name)
