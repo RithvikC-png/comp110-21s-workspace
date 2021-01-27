@@ -3,5 +3,5 @@
 import random
 print(random.randint(0,1))
 
-0 = print("No")
-1 = print("Yes")
+int(0) = print("No")
+int(1) = print("Yes")
