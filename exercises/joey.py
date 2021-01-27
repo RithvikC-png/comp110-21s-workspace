@@ -8,11 +8,11 @@ Q3: str = (input("Is you laptop too far away? "))
 
 score = int(0)
 
-if Q1 == ("yes")
+if Q1 == "yes"
     score = score + 1
-if Q2 == ("yes")
+if Q2 == "yes"
     score = score + 1
-if Q3 == ("yes")
+if Q3 == "yes"
     score = score + 1
 
 if score >= 2
