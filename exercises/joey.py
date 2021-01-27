@@ -1,7 +1,7 @@
 """Should Joey go to class"""
 
 import random
-print(random.randint(0,1))
+answer: print(random.randint(0,1))
 
-if(print(0)) = str("No")
-if(print(1)) = str("yes")
+if(answer = 0) print("No")
+if(answer = 1) print("Yes")
