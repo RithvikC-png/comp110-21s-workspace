@@ -6,7 +6,7 @@ Q1: str = str(input("Are you tired right now? "))
 Q2: str = str(input("Do you hate class? "))
 Q3: str = str(input("Is you laptop too far away? "))
 
-score = 0
+score = int(0)
 
 if input(Q1) = yes
     score = score + 1
