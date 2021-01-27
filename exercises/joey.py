@@ -3,5 +3,7 @@
 import random
 print(random.randint(0,1))
 
-int(0) = print("No")
-int(1) = print("Yes")
+if randit = 0
+    print("No")
+if randint = 1
+    print("Yes")
