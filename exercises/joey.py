@@ -4,6 +4,6 @@ import random
 print(random.randint(0,1))
 
 if randit = 0
-    print("No")
+    then print("No")
 if randint = 1
-    print("Yes")
+    then print("Yes")
