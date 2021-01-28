@@ -1,6 +1,5 @@
-a: str = "a"
-b: str = "b" + a + "b"
-c: str = "c" + b + "c"
-n: int = len(c)
-
-print(c[n-1])
+a: int = 1
+b: int = a + a
+c: int = b
+a = 3
+print(b / c)
