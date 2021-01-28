@@ -4,9 +4,9 @@ score: int = int(0)
 
 name: str = input("What is your name? ")
 
-Q1 = raw_input("Are you tired right now? ")
-Q2 = raw_input("Do you hate class? ")
-Q3 = raw_input("Is you laptop too far away? ")
+Q1 = input("Are you tired right now? ")
+Q2 = input("Do you hate class? ")
+Q3 = input("Is you laptop too far away? ")
 
 if Q1 == "yes"
     score = score + 1
