@@ -10,16 +10,10 @@ Q3 = input("Is you laptop too far away? ")
 
 if Q1 == "yes"
     score = score + 1
-    else
-        score = score
 if Q2 == "yes"
     score = score + 1
-    else
-        score = score
 if Q3 == "yes"
     score = score + 1
-    else
-        score = score
 
 if score >= 2
     print("You should not go to class " + name)
