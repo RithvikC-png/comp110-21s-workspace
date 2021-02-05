@@ -7,4 +7,4 @@ __author__ = "730398645"
 
 a = int(input("Enter a number"))
 
-print(a)
+print(a % 2)
