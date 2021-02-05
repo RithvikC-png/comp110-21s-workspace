@@ -17,6 +17,13 @@ print("Your fortune cookie says...")
 
 a: int = randint(1,4)
 
-print(a)
+if a < 2
+    print("The early bird gets the worm, but the second mouse gets the cheese")
+elif a < 3
+    print("A faithful friend is a strong defense")
+elif a < 4
+    print("A fresh start will put you on your way")
+else
+    print("A friend asks only for your time not your money")
 
 print("Now, go spread positive vibes!")
