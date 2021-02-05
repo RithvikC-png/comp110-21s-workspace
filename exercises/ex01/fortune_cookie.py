@@ -15,7 +15,7 @@ from random import randint
 # Begin your solution here...
 print("Your fortune cookie says...")
 
-a: int = from random import randint(1,4)
+a = random.randint(1,4)
 
 if a < 2
     print("The early bird gets the worm, but the second mouse gets the cheese")
