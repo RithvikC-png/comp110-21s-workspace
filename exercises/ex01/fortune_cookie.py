@@ -15,7 +15,7 @@ from random import randint
 # Begin your solution here...
 print("Your fortune cookie says...")
 
-a: randint(1,4)
+a: int = randint(1,4)
 
 print(a)
 
