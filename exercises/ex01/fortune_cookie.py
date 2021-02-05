@@ -13,6 +13,6 @@ from random import randint
 
 
 # Begin your solution here...
-print("your fortune cookie says...")
+print("Your fortune cookie says...")
 
 print("Now, go spread positive vibes!")
