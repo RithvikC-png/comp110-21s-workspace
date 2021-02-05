@@ -5,6 +5,7 @@ __author__ = "730398645"
 
 # Begin your solution here...
 
-a = int(input("Enter a number"))
+a = int(input("Enter a number "))
 
-print(a % 2)
+if (a % 2) == 0:
+    print("TAR")
