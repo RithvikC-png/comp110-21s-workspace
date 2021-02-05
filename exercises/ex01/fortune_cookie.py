@@ -17,13 +17,6 @@ print("Your fortune cookie says...")
 
 a = random.randint(1,4)
 
-if a < 2
-    print("The early bird gets the worm, but the second mouse gets the cheese")
-    elif a < 3
-        print("A faithful friend is a strong defense")
-        elif a < 4
-            print("A fresh start will put you on your way")
-            else
-                print("A friend asks only for your time not your money")
+print(a)
 
 print("Now, go spread positive vibes!")
