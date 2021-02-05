@@ -23,7 +23,7 @@ elif a < 3:
     print("A faithful friend is a strong defense")
 elif a < 4:
     print("A fresh start will put you on your way")
-else
+else:
     print("A friend asks only for your time not your money")
 
 print("Now, go spread positive vibes!")
