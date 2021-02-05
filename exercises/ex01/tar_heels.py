@@ -1,6 +1,10 @@
 """An exercise in remainders and boolean logic."""
 
-__author__ = "ENTER YOUR 9-DIGIT PID HERE"
+__author__ = "730398645"
 
 
 # Begin your solution here...
+
+a: int(input(Enter a number))
+
+print(a)
