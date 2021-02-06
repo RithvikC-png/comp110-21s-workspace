@@ -26,4 +26,12 @@ target_per = int(input("What is your target percent vaccinated? "))
 
 days_to_target = ((target_per / int(100) * population * int(2)) - administered) / doses
 
+from datetime import dateime, timedelta
+
+today: datetime = datetime.today()
+one_day: timedelta = timedelta(1)
+tomorrow: datetime = today + one_day
+
+print(tomorrow.strftime("%B %d, %Y"))
+
 print(int(days_to_target))
