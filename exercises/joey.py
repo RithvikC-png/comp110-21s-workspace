@@ -9,10 +9,10 @@ Q2 = input("Do you hate class? ")
 Q3 = input("Is you laptop too far away? ")
 
 if input(Q1) == "yes":
-    score = score + 1
+    score = score + int(1)
 if input(Q2) == "yes":
-    score = score + 1
+    score = score + int(1)
 if input(Q3) == "yes":
-    score = score + 1
+    score = score + int(1)
 
 print(score)
