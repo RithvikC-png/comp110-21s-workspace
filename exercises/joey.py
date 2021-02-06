@@ -8,11 +8,11 @@ Q1 = input("Are you tired right now? ")
 Q2 = input("Do you hate class? ")
 Q3 = input("Is you laptop too far away? ")
 
-if input(Q1) == "yes":
+if input(Q1) == "yes" or "Yes":
     score = score + int(1)
-if input(Q2) == "yes":
+if input(Q2) == "yes" or "Yes":
     score = score + int(1)
-if input(Q3) == "yes":
+if input(Q3) == "yes" "Yes":
     score = score + int(1)
 
 print(score)
