@@ -19,12 +19,17 @@ from datetime import timedelta
 
 # Begin your solution here...
 
+population = int(input("What is the population? "))
+administered = int(input("How many doeses have been administered? "))
+doses = int(input("How many doses are being administered per day? "))
+target_per = int(input("What is your target percent vaccinated? "))
+
+days_to_target = ((target_per / int(100) * population * int(2)) - administered) / doses
+
 from datetime import datetime, timedelta
 
 today: datetime = datetime.today()
+plus_days: timedelta = timedelta(days_to_target)
+target: datetime = today + plus_days
 
-one_day: timedelta = timedelta(1)
-
-tomorrow: datetime = today + one_day
-
-print(tomorrow.strftime("%B %d, %Y"))
+print(target.strftime("%B %d, %Y"))
