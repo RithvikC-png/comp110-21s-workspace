@@ -4,6 +4,9 @@ __author__ = "730398645"
 
 
 # Begin your solution here...
+"""This program uses remainders and boolean logic"""
+
+__author__ = "730398645"
 
 number = int(input("Enter a number "))
 
