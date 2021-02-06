@@ -15,7 +15,7 @@ if input(Q2) == "yes":
 if input(Q3) == "yes":
     score = score + 1
 
-if score >= 2
+if score >= 2:
     print("You should not go to class " + name)
-if score < 2
+if score < 2:
     print("You should go to class " + name)
