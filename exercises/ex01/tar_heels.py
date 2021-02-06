@@ -8,7 +8,7 @@ __author__ = "730398645"
 
 __author__ = "730398645"
 
-number = int(input("Enter a number "))
+a = int(input("Enter a number "))
 
 if (a % 2) == 0 and (a % 7) == 0:
     print("TAR HEELS")
