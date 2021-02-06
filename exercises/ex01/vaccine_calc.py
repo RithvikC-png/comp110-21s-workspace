@@ -32,6 +32,6 @@ today: datetime = datetime.today()
 one_day: timedelta = timedelta(1)
 tomorrow: datetime = today + one_day
 
-print(tomorrow.strftime("%B %d, %Y"))
+target: today + days_to_target
 
-print(int(days_to_target))
+print(target("%B %d, %Y"))
