@@ -19,7 +19,7 @@ from datetime import timedelta
 
 # Begin your solution here...
 
-from datime import datetime, timedelta
+from datetime import datetime, timedelta
 
 today: datetime = datetime.today()
 
