@@ -26,4 +26,4 @@ target_per = int(input("What is your target percent vaccinated? "))
 
 days_to_target = ((target_per / int(100) * population * int(2)) - administered) / doses
 
-print(days_to_target)
+print(int(days_to_target))
