@@ -32,4 +32,4 @@ today: datetime = datetime.today()
 plus_days: timedelta = timedelta(days_to_target)
 target: datetime = today + plus_days
 
-print("We will reach " + str(target_per) + "% vaccination in" +  str(days_to_target) + " which falls on" + str(target.strftime("%B %d, %Y")))
+print("We will reach " + str(target_per) + "% vaccination in" +  str(int(days_to_target)) + " days which falls on" + str(target.strftime("%B %d, %Y")))
