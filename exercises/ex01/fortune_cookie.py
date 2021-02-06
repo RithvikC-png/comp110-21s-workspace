@@ -13,6 +13,10 @@ from random import randint
 
 
 # Begin your solution here...
+"""This program gives fortune cookie sayings"""
+
+__author__ = "730398645"
+
 print("Your fortune cookie says...")
 
 a = randint(1,4)
