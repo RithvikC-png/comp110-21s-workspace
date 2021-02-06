@@ -18,6 +18,9 @@ from datetime import timedelta
 
 
 # Begin your solution here...
+"""This program calculates how quickly people can be vaccinated from covid"""
+
+__author__ = "730398645"
 
 population = int(input("What is the population? "))
 administered = int(input("How many doses have been administered? "))
