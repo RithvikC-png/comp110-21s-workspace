@@ -27,7 +27,7 @@ administered = int(input("How many doses have been administered? "))
 doses = int(input("How many doses are being administered per day? "))
 target_per = int(input("What is your target percent vaccinated? "))
 
-days_to_target = round((target_per / int(100) * population * int(2)) - administered) / doses
+days_to_target = ((target_per / int(100) * population * int(2)) - administered) / doses
 
 from datetime import datetime, timedelta
 
