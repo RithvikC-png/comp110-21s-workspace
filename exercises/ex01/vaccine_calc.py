@@ -22,8 +22,8 @@ from datetime import timedelta
 population = int(input("What is the population? "))
 administered = int(input("How many doeses have been administered? "))
 doses = int(input("How many doses are being administered per day? "))
-target per = int(input("What is your target percent vaccinated? "))
+target_per = int(input("What is your target percent vaccinated? "))
 
-days to target = ((target per / int(100) * population * int(2)) - administered) / doses
+days_to_target = ((target per / int(100) * population * int(2)) - administered) / doses
 
-print(days to target)
+print(days_to_target)
