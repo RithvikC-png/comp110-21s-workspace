@@ -32,4 +32,4 @@ today: datetime = datetime.today()
 plus_days: timedelta = timedelta(days_to_target)
 target: datetime = today + plus_days
 
-print(target.strftime("%B %d, %Y"))
+print("We will reach" + " target_per in" + " days_to_target which falls on" + target.strftime("%B %d, %Y"))
