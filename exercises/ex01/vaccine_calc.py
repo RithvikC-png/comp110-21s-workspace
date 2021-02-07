@@ -33,4 +33,4 @@ today: datetime = datetime.today()
 plus_days: timedelta = timedelta(d)
 g: datetime = today + plus_days
 
-print("We will reach "+str(t)+"% vaccination in "+int(str(d))+" days which falls on "+str(g.strftime("%B %d, %Y")))
+print("We'll reach " + str(t) + "% vaccinated in " + int(str(d)) + " days which is on " + str(g.strftime("%B %d, %Y")))
