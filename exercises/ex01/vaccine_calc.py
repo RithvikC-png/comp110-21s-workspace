@@ -27,10 +27,10 @@ administered = int(input("How many doses have been administered? "))
 doses = int(input("How many doses are being administered per day? "))
 t = int(input("What is your target percent vaccinated? "))
 
-d = round((t / int(100) * population * int(2)) - administered) / doses
+d = round((tp / int(100) * population * int(2)) - administered) / doses
 
 today: datetime = datetime.today()
 plus_days: timedelta = timedelta(d)
 g: datetime = today + plus_days
 
-print("We'll reach " + str(t) + "% vaccinated in " + int(str(d)) + " days which is on " + str(g.strftime("%B %d, %Y")))
+print("We'll reach " + str(t) + "% vaccinated in " + str(int(d) + " days which is on " + str(g.strftime("%B %d, %Y")))
