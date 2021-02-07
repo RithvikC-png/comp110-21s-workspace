@@ -22,14 +22,14 @@ from datetime import timedelta
 
 __author__ = "730398645"
 
+from datetime import datetime, timedelta
+
 population = int(input("What is the population? "))
 administered = int(input("How many doses have been administered? "))
 doses = int(input("How many doses are being administered per day? "))
 target_per = int(input("What is your target percent vaccinated? "))
 
 days_to_target = ((target_per / int(100) * population * int(2)) - administered) / doses
-
-from datetime import datetime, timedelta
 
 today: datetime = datetime.today()
 plus_days: timedelta = timedelta(days_to_target)
