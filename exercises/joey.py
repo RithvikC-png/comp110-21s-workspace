@@ -12,5 +12,5 @@ elif input(Q2) == "no" or "No":
     print("Go to class " + name)
 elif input(Q3) == "no" or "No":
     print("Go to class " + name)
-    else:
-        print("You should not go to class " + name)
+else:
+    print("You should not go to class " + name)
