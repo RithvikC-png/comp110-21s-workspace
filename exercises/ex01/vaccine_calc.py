@@ -30,7 +30,7 @@ t = int(input("What is your target percent vaccinated? "))
 d = round((t / int(100) * population * int(2)) - administered) / doses
 
 today: datetime = datetime.today()
-plus_days: timedelta = timedelta(dtt)
+plus_days: timedelta = timedelta(d)
 g: datetime = today + plus_days
 
 print("We will reach " + str(t) + "% vaccination in " + str(d) + " days which falls on " + str(g.strftime("%B %d, %Y")))
