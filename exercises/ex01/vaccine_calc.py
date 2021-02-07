@@ -25,12 +25,12 @@ __author__ = "730398645"
 population = int(input("What is the population? "))
 administered = int(input("How many doses have been administered? "))
 doses = int(input("How many doses are being administered per day? "))
-target_per = int(input("What is your target percent vaccinated? "))
+t = int(input("What is your target percent vaccinated? "))
 
-days_to_target = ((target_per / int(100) * population * int(2)) - administered) / doses
+d = round((t / int(100) * population * int(2)) - administered) / doses
 
 today: datetime = datetime.today()
-plus_days: timedelta = timedelta(days_to_target)
-target: datetime = today + plus_days
+plus_days: timedelta = timedelta(dtt)
+g: datetime = today + plus_days
 
-print("We will reach " + str(target_per) + "% vaccination in " +  str(int(days_to_target)) + " days which falls on " + str(target.strftime("%B %d, %Y")))
+print("We will reach " + str(t) + "% vaccination in " + str(d) + " days which falls on " + str(g.strftime("%B %d, %Y")))
