@@ -22,8 +22,6 @@ from datetime import timedelta
 
 __author__ = "730398645"
 
-from datetime import datetime, timedelta
-
 population = int(input("What is the population? "))
 administered = int(input("How many doses have been administered? "))
 doses = int(input("How many doses are being administered per day? "))
