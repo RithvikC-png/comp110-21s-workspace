@@ -35,6 +35,6 @@ g: datetime = today + plus_days
 
 x = "We will reach " + str(t)
 y = "% vaccination in " + str(d)
-z = "days, which falls on " + str(g.strftime("%B %d, %Y")
+z = " days, which falls on " + str(g.strftime("%B %d, %Y"))
 
-print(str(x) + str(y) + str(z))
+print(x + y + z)
