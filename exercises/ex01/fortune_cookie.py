@@ -19,7 +19,7 @@ __author__ = "730398645"
 
 print("Your fortune cookie says...")
 
-a = randint(1,4)
+a = randint(1 , 4)
 
 if a < 2:
     print("The early bird gets the worm, but the second mouse gets the cheese")
