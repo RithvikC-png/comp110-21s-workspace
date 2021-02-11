@@ -1,14 +1,23 @@
-"""MJ, but not 23"""
+def main() -> None:
+    print(please(5))
+    return None
+
+def britney(x: int) -> float:
+    return x / 2
 
 
-def a(b: int, c: str) -> float:
-    b = b + 23
-    c = c + str(b)
-    abc: float = float(c)
-    return abc
+def please(x: int) -> str:
+    f: str = str(free(x))
+    b: str = str(britney(x))
+    return b + f
 
 
-b: str = "1"
-c: int = 0
+def free(x: int) -> int:
+    return x + 2
 
-print(a(c,b))
+
+
+if __name__ == "__main__":
+    main()
+
+print(please(5))
