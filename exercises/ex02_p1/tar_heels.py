@@ -12,7 +12,7 @@ print(tar_heels(unc))
 # TODO 1: Define the tar_heels function, and its logic, here.
 def tar_heels(unc: int) -> str:
 
-    a = int(input("Enter a number "))
+    unc = unc
 
     if (a % 2) == 0 and (a % 7) == 0:
         print("TAR HEELS")
