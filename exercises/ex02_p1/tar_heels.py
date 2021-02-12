@@ -15,13 +15,13 @@ def tar_heels(unc: int) -> str:
     unc = unc
 
     if (unc % 2) == 0 and (unc % 7) == 0:
-        print("TAR HEELS")
+        return("TAR HEELS")
     elif (unc % 2) == 0:
-        print("TAR")
+        return("TAR")
     elif (unc % 7) == 0:
-        print("HEELS")
+        return("HEELS")
     else:
-        print("CAROLINA")
+        return("CAROLINA")
 
 
 if __name__ == "__main__":
