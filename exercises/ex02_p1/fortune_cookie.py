@@ -12,7 +12,9 @@ def main() -> None:
     print("Now, go spread positive vibes!")
     print(fortune_cookie())
 
+
 def fortune_cookie() -> str:
+    """My fortune cookie"""
     a = randint(1, 4)
 
     if a < 2:
@@ -32,10 +34,7 @@ def fortune_cookie() -> str:
 # The special dunder variable __name__ will be "__main__" when run as module. 
 
 
-
 if __name__ == "__main__":
     main()
-
-
 
 
