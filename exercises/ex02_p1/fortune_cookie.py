@@ -10,6 +10,7 @@ def main() -> None:
     print("Your fortune cookie says...")
     # TODO 2: Print the result of calling your fortune_cookie function.
     print("Now, go spread positive vibes!")
+    print(fortune_cookie())
 
 def fortune_cookie() -> str:
     a = randint(1, 4)
@@ -25,7 +26,7 @@ def fortune_cookie() -> str:
 
 
 # TODO 1: Define your fortune_cookie function here.
-print(fortune_cookie())
+
 
 # Python Idiom for "starting" the program when run as a module.
 # The special dunder variable __name__ will be "__main__" when run as module. 
