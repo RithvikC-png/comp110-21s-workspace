@@ -14,11 +14,11 @@ def tar_heels(unc: int) -> str:
 
     unc = unc
 
-    if (a % 2) == 0 and (a % 7) == 0:
+    if (unc % 2) == 0 and (unc % 7) == 0:
         print("TAR HEELS")
-    elif (a % 2) == 0:
+    elif (unc % 2) == 0:
         print("TAR")
-    elif (a % 7) == 0:
+    elif (unc % 7) == 0:
         print("HEELS")
     else:
         print("CAROLINA")
