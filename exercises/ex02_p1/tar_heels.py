@@ -9,9 +9,10 @@ def main() -> None:
     # TODO 2: Print the response of calling the tar_heels function here.
     print(tar_heels(unc))
 
+
 # TODO 1: Define the tar_heels function, and its logic, here.
 def tar_heels(unc: int) -> str:
-    """Tar Heel pride"""
+    """Tar Heel pride."""
     unc = unc
 
     if (unc % 2) == 0 and (unc % 7) == 0:
