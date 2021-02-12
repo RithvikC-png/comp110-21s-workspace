@@ -14,7 +14,7 @@ def main() -> None:
 
 
 def fortune_cookie() -> str:
-    """My fortune cookie"""
+    """My fortune cookie."""
     a = randint(1, 4)
 
     if a < 2:
@@ -36,5 +36,3 @@ def fortune_cookie() -> str:
 
 if __name__ == "__main__":
     main()
-
-
