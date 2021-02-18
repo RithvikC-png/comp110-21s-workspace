@@ -43,7 +43,3 @@ def future_date() -> None:
 
 if __name__ == "__main__":
     main()
-
-
-
-
