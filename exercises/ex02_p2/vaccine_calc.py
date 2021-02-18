@@ -2,7 +2,7 @@
 
 from datetime import datetime, timedelta
 
-__author__ = "YOUR 9-DIGIT PID"
+__author__ = "730398645"
 
 
 def main() -> None:
@@ -30,22 +30,21 @@ def main() -> None:
     print(x + y + z)
 
 # TODO 1: Define days_to_target function
-def days_to_target(days: int) -> int:
+def days_to_target() -> None:
     """The number of days to the target vaccination"""
-    days = days
 
-    int(round(((target / int(100) * population * int(2)) - doses) / doses_per_day))
+    days_to_target = int(round(((target / int(100) * population * int(2)) - doses) / doses_per_day))
 
 # TODO 3: Define future_date function
-def future_date(date: int) -> int:
+def future_date() -> None:
     """The date of target vaccination"""
-    date = date
 
     datetime = today + plus_days
 
 if __name__ == "__main__":
     main()
 
+print(main)
 
 
 
