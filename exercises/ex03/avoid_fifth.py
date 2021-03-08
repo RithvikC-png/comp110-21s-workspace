@@ -5,13 +5,19 @@ __author__: str = "730398645"
 
 def main() -> None:
     """Entrypoint of the program."""
-    input_sentence: str = input("What would you like your sentence to be? ")
+    sentence: str = input("What would you like your sentence to be? ")
     # Put print statements here to test your function
-    avoid_fifth(input_sentence)
+    print("Your new sentence is: " + avoid_fifth(sentence))
     # ex. print(avoid_fifth("hello there"))
-    print(f"Original Sentece: {input_sentence}")
-    
-    return(input_sentence)
+def avoid_fifth(sentence: str) -> str:
+    """A way to remove the letter 'E'!"""
+    print(f"You original sentece: {sentence}")
+    delete_e = str("")
+
+    for letter in sentence:
+        if letter != "E" and letter != "e":
+            delete_e = delete_e + letter
+    return(delete_e)
 
 
 if __name__ == "__main__":
