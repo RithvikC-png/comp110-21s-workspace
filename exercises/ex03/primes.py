@@ -13,6 +13,7 @@ def main() -> None:
     print(is_prime(number))
     print(list_primes(lower_number, upper_number))
 
+
 def is_prime(number: int) -> bool:
     """Talk prime to me!"""
     numbers = range(2, number)
