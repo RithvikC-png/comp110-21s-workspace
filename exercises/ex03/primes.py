@@ -19,7 +19,7 @@ def is_prime(x: int) -> bool:
             return False
         else:
             i: int = 0
-            while i < len(numbers):
+            while i < (len(numbers) - 1):
                 check: int = numbers[i]
                 if (x % check) != 0:
                     return True
