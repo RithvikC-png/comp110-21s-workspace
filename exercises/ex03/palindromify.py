@@ -19,18 +19,13 @@ def main() -> None:
 
 def palindromify(original: str, x: bool) -> str:
     """A way to palindrome inputs."""
-    
     if x is True:
         palindrome = original[::-1]
         return (original + palindrome)
 
-    i = len(original)
     if x is False:
-        while i > 0:
-            palindrome_odd = original[i]
-            i -= i
-    
-    return original + original[i]
+        new_statement = original[::-1]
+    return(original[0:len(original) - 1 :1] + new_statement)
 
 if __name__ == "__main__":
     main()
