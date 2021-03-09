@@ -25,7 +25,7 @@ def palindromify(original: str, x: bool) -> str:
 
     if x is False:
         new_statement = original[::-1]
-    return(original[0:len(original) - 1 :1] + new_statement)
+    return(original[0:len(original) -1 :1] + new_statement)
 
 if __name__ == "__main__":
     main()
