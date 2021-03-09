@@ -7,8 +7,8 @@ def main() -> None:
     """Entrypoint of the program."""
     # Put print statements here to test your function
     # ex. print(is_prime(5)), print(list_primes(10, 20))
-    print(is_prime(13))
-    print(list_primes(5,13))
+    print(is_prime(20))
+    print(list_primes(5, 13))
 
 
 def is_prime(x: int) -> bool:

@@ -15,7 +15,7 @@ def palindromify(word: str, x: bool) -> str:
     """A way to palindrome inputs."""
     if x is False:
         new_statement = word[:: -1]
-        return(word[0: len(word) -1: 1] + new_statement)
+        return(word[0: len(word) - 1: 1] + new_statement)
         
     if x is True:
         palindrome = word[::-1]
