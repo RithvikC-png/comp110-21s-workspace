@@ -7,7 +7,7 @@ def main() -> None:
     """Entrypoint of the program."""
     # Put print statements here to test your function
     # ex. print(is_prime(5)), print(list_primes(10, 20))
-    print(is_prime(23))
+    print(is_prime(2))
     print(list_primes(3, 7))
 
 
@@ -15,9 +15,6 @@ def is_prime(x: int) -> bool:
     """Talk prime to me!"""
     numbers = range(2, x)
     if x > 1:
-        if x == 2:
-            return False
-        else:
             i: int = 0
             while i < len(numbers):
                 check: int = numbers[i]
@@ -29,7 +26,7 @@ def is_prime(x: int) -> bool:
                 return True
     if x <= 1:
         return False
-    return("")
+    return True
 
 
 def list_primes(ln: int, un: int) -> list[int]:
