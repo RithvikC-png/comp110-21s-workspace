@@ -21,6 +21,6 @@ def palindromify(word: str, x: bool) -> str:
         palindrome = word[::-1]
         return str((word + palindrome))
 
-return None
+
 if __name__ == "__main__":
     main()

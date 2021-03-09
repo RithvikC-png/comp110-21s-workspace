@@ -41,6 +41,5 @@ def list_primes(lower_number: int, upper_number: int) -> list[int]:
     return prime_numbers
 
 
-return None
 if __name__ == "__main__":
     main()
