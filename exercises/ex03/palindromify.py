@@ -20,6 +20,7 @@ def palindromify(word: str, x: bool) -> str:
     if x is True:
         palindrome = word[::-1]
         return str((word + palindrome))
+    return()
 
 
 if __name__ == "__main__":

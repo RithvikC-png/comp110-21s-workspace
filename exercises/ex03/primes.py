@@ -17,16 +17,18 @@ def is_prime(x: int) -> bool:
     if x > 1:
         if x == 2:
             return False
-        i: int = 0
-        while i < len(numbers):
-            check: int = numbers[i]
-            if (x % check) != 0:
-                return True
-                i += 1
-            if (x % check) == 0:
-                return False
+        else:
+            i: int = 0
+            while i < len(numbers):
+                check: int = numbers[i]
+                if (x % check) != 0:
+                    return True
+                    i += 1
+                if (x % check) == 0:
+                    return False
     if x <= 1:
         return False
+    return()
 
 
 def list_primes(ln: int, un: int) -> list[int]:
