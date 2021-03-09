@@ -10,6 +10,7 @@ if odd_even == 0:
 else:
     x = True
 
+
 def main() -> None:
     """Entrypoint of the program."""
     # Put print statements here to test your function
@@ -20,7 +21,7 @@ def main() -> None:
 def palindromify(original: str, x: bool) -> str:
     """A way to palindrome inputs."""
     if x is False:
-        new_statement = original[::-1]
+        new_statement = original[ :: -1]
         return(original[0:len(original) -1 :1] + new_statement)
         
     if x is True:

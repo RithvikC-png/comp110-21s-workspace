@@ -9,6 +9,8 @@ def main() -> None:
     # Put print statements here to test your function
     print("Your new sentence is: " + avoid_fifth(sentence))
     # ex. print(avoid_fifth("hello there"))
+
+
 def avoid_fifth(sentence: str) -> str:
     """A way to remove the letter 'E'!"""
     print(f"You original sentece: {sentence}")

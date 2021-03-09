@@ -10,19 +10,22 @@ def main() -> None:
     # ex. print(is_prime(5)), print(list_primes(10, 20))
     print(is_prime(number))
 
-def is_prime(number: int) -> bool:
-    numbers = range (2 , number)
+
+def is_prime (number: int) -> bool:
+    """Talk prime to me!"""
+    numbers = range (1, number)
     if number > 1:
         i: int = 0
         while i < len(numbers):
-            if (number % numbers[i]) != 0:
-                return False
-                i += 1
-            if (number % numbers[i]) == 0:
+            check: int = numbers[i]
+            if (number % check) != 0:
                 return True
+                i += 1
+            if (number % check) == 0:
+                return False
     if number <= 1:
-        print("Composited")
         return False
+
 
 if __name__ == "__main__":
     main()
