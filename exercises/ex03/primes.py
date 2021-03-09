@@ -11,7 +11,7 @@ def main() -> None:
     # Put print statements here to test your function
     # ex. print(is_prime(5)), print(list_primes(10, 20))
     print(is_prime(number))
-    print(list_prime(lower_number, upper_number))
+    print(list_primes(lower_number, upper_number))
 
 
 def is_prime (number: int) -> bool:
@@ -24,14 +24,14 @@ def is_prime (number: int) -> bool:
         while i < len(numbers):
             check: int = numbers[i]
             if (number % check) != 0:
-                return True
+                return False
                 i += 1
             if (number % check) == 0:
-                return False
+                return True
     if number <= 1:
         return False
 
-def list_prime(lower_number: int, upper_number: int) -> list[int]:
+def list_primes(lower_number: int, upper_number: int) -> list[int]:
     """What are the prime numbers in this range?"""
     prime_numbers = []
     while(lower_number < upper_number):
