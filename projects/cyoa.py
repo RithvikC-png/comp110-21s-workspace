@@ -69,7 +69,7 @@ def how_many_points(score: int) -> int:
     print(f"Hey {player}! The finals of March Madness is about to start. UNC needs you!")
     score = 0
     shots_left: int = 7
-    celebrate: str = "\U0001f389"
+    celebrate = "\U0001f389"
 
     while (shots_left > 0):
         shoot = (input("would you like to shoot? yes/no \n "))
