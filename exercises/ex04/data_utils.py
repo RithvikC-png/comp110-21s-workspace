@@ -7,7 +7,7 @@ from csv import DictReader
 DATA_DIRECTORY="../../data"
 DATA_FILE_PATH=f"{DATA_DIRECTORY}/nc_durham_2015_march_21_to_27.csv"
 
-file_handle = open("../data/nc_durham_2015_march_21_to_27.csv", "r", encoding="utf8")
+file_handle = open("../../data/nc_durham_2015_march_21_to_27.csv", "r", encoding="utf8")
 csv_file = DictReader(file_handle)
 
 def read_csv_rows(csv_file: str) -> list[dict[str, str]]:
