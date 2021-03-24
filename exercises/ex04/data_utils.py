@@ -4,7 +4,7 @@ __author__ = "730398645"
 
 
 from csv import DictReader
-from data import nc_durham_2015_march_21_to_27
+from data import nc_durham_2015_march_21_to_27 as csv_file
 
 file_handle = open("data/nc_durham_2015_march_21_to_27.csv", "r", encoding="utf8")
 csv_reader = DictReader(file_handle)
