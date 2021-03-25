@@ -31,6 +31,7 @@ def column_values(rows: list[dict[str, str]], column: str) -> list[str]:
     
     return(charts)
 
+print(read_csv_rows(csv_file))
 print(column_values(table, column))
 
 # TODO: Define the other functions here.
