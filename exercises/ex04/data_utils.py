@@ -28,11 +28,13 @@ def column_values(rows: list[dict[str, str]], column: str) -> list[str]:
 
 def columnar(rows: list[dict[str, str]]) -> dict[str, list[str]]:
     """Convert rows into columns."""
-    headers: dict[str, list[str]] = {}
+    columns: dict[str, list[str]] = {}
     for row in rows:
-        headers = {"subject_age": [column_values]}
+        columns = {
+            "subject_age": [0]
+        }
     
-    return(headers)
+    return(columns)
 
 
 # TODO: Define the other functions here.
