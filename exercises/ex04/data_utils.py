@@ -19,12 +19,22 @@ def read_csv_rows(csv_file: str) -> list[dict[str, str]]:
 
     # TODO 0.1) Complete the implementation of this function here.
 def column_values(rows: list[dict[str, str]], column: str) -> list[str]:
-    """Arrange the CSV file by column"""
+    """Arrange the CSV file by column."""
     charts: list[str] = []
     for row in rows:
         charts.append(row[column])
 
     return(charts)
+
+
+def columnar(rows: list[dict[str, str]]) -> dict[str, list[str]]:
+    """Convert rows into columns."""
+    from column_values import charts
+    columns: dict[str, list[str]] = {}
+    for row in rows:
+        columns = {"subject age": [charts]}
+    
+    return(columns)
 
 
 # TODO: Define the other functions here.
