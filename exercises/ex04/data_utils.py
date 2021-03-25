@@ -22,7 +22,6 @@ def column_values(rows: list[dict[str, str]], column: str) -> list[str]:
     charts: list[str] = []
     for row in rows:
         charts.append(row[column])
-
     return(charts)
 
 
@@ -32,7 +31,6 @@ def columnar(rows: list[dict[str, str]]) -> dict[str, list[str]]:
     for [column] in rows:
         values = column_values(rows, column)
         columns[column] = values
-    
     return(columns)
 
 
