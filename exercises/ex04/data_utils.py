@@ -33,7 +33,7 @@ def columnar(rows: list[dict[str, str]]) -> dict[str, list[str]]:
     for row in rows:
         headers = {"subject_age": [column_values]}
     
-    return(columns)
+    return(headers)
 
 
 # TODO: Define the other functions here.
