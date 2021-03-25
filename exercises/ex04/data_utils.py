@@ -31,7 +31,7 @@ def columnar(rows: list[dict[str, str]]) -> dict[str, list[str]]:
     """Convert rows into columns."""
     headers: dict[str, list[str]] = {}
     for row in rows[0]:
-        columns = {"subject_age": [charts]}
+        columns = {"subject_age": [column_values]}
     
     return(columns)
 
