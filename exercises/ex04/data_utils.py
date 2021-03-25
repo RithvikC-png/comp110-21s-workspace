@@ -19,9 +19,8 @@ def read_csv_rows(csv_file: str) -> list[dict[str, str]]:
     csv_reader = DictReader(file_handle)
     for row in csv_file:
         rows.append(row)
-    file_handle.close()
     return(rows)
-    
+    file_handle.close()
     # TODO 0.1) Complete the implementation of this function here.
 def column_values(rows: list[dict[str, str]], column: str) -> list[str]:
     """Arrange the CSV file by column"""
