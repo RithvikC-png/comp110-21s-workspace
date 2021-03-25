@@ -13,8 +13,9 @@ def read_csv_rows(csv_file: str) -> list[dict[str, str]]:
     csv_reader = DictReader(file_handle)
     for row in csv_reader:
         rows.append(row)
-    return(rows)
     file_handle.close()
+    return(rows)
+
 
     # TODO 0.1) Complete the implementation of this function here.
 def column_values(rows: list[dict[str, str]], column: str) -> list[str]:
@@ -25,6 +26,7 @@ def column_values(rows: list[dict[str, str]], column: str) -> list[str]:
     return(charts)
 
 
+# TODO: Define the other functions here.
 def columnar(rows: list[dict[str, str]]) -> dict[str, list[str]]:
     """Convert rows into columns."""
     columns: dict[str, list[str]] = {}
@@ -32,6 +34,3 @@ def columnar(rows: list[dict[str, str]]) -> dict[str, list[str]]:
         values = column_values(rows, column)
         columns[column] = values
     return(columns)
-
-
-# TODO: Define the other functions here.
