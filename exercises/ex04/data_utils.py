@@ -22,11 +22,9 @@ def column_values(rows: list[dict[str, str]], column: str) -> list[str]:
     """Arrange the CSV file by column"""
     charts: list[str] = []
     for row in rows:
-        charts.append(column)
-    
-    first_five = column_values["subject_age"][0,1,2,3,4]
+        charts.append(row[column])
 
-    return(first_five)
+    return(charts)
 
 
 # TODO: Define the other functions here.
