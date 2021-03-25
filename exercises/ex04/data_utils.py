@@ -24,7 +24,7 @@ def column_values(rows: list[dict[str, str]], column: str) -> list[str]:
     for row in rows:
         charts.append(column)
     
-    first_five = column_values[0,1,2,3,4]["subject_age"]
+    first_five = column_values["subject_age"][0,1,2,3,4]
 
     return(first_five)
 
