@@ -4,10 +4,6 @@ __author__ = "730398645"
 
 
 from csv import DictReader
-DATA_DIRECTORY="../../data"
-DATA_FILE_PATH=f"{DATA_DIRECTORY}/nc_durham_2015_march_21_to_27.csv"
-
-csv_file = DictReader(DATA_FILE_PATH)
 
 table: dict[str, list[str]] = {}
 column: list = []
