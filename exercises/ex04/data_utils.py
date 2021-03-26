@@ -29,8 +29,8 @@ def column_values(rows: list[dict[str, str]], column: str) -> list[str]:
 # TODO: Define the other functions here.
 def columnar(rows: list[dict[str, str]]) -> dict[str, list[str]]:
     """Convert rows into columns."""
-    columns: dict[str, list[str]] = {}
+    table: dict[str, list[str]] = {}
     for [column] in rows:
         values = column_values(rows, column)
-        columns[column] = values
-    return(columns)
+        table[column] = values
+    return table
