@@ -33,5 +33,5 @@ def columnar(rows: list[dict[str, str]]) -> dict[str, list[str]]:
     table: dict[str, list[str]] = {}
     for [column] in rows:
         key, value = line.split.column_values(rows, column)
-        table[column] = key, value
+        table[key] = value
     return table
