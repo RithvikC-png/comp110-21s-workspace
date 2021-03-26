@@ -32,6 +32,6 @@ def columnar(rows: list[dict[str, str]]) -> dict[str, list[str]]:
     """Convert rows into columns."""
     table: dict[str, list[str]] = {}
     for [column] in rows:
-        values = column_values(rows, column)
-        table[column] = values
+        key, value = line.split.column_values(rows, column)
+        table[column] = key, value
     return table
