@@ -5,7 +5,7 @@ __author__ = "730398645"
 
 from csv import DictReader
 from typing import Dict
-column: str = ""
+column = ""
 
 def read_csv_rows(csv_file: str) -> list[dict[str, str]]:
     """Read a CSV file's contents into a list of rows."""
