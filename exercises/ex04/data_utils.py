@@ -46,3 +46,4 @@ def head(columns: dict[str, list[str]], rows: int) -> dict[str, list[str]]:
             N.append(str)
         Dictionary_A[column] = N
     return Dictionary_A
+head(columns, (1,6))
