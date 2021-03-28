@@ -40,9 +40,9 @@ def columnar(rows: list[dict[str, str]]) -> dict[str, list[str]]:
 
 def head(columns: dict[str, list[str]], rows: int) -> dict[str, list[str]]:
     Dictionary_A: dict[str, list[str]] = {}
-    for rows in columns:
+    for column in columns:
         N: list[str] = []
-        for [word] in rows:
-            N.append(word)
+        for value in column:
+            N.append(column)
         Dictionary_A[rows] = N
     return Dictionary_A
