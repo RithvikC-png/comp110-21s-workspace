@@ -5,6 +5,7 @@ __author__ = "730398645"
 
 from csv import DictReader
 from typing import Dict
+from tabulate import tabulate
 
 
 def read_csv_rows(csv_file: str) -> list[dict[str, str]]:
@@ -35,3 +36,12 @@ def columnar(rows: list[dict[str, str]]) -> dict[str, list[str]]:
         values = column_values(rows, column)
         table[column] = values
     return table
+
+
+def head(columns: dict[str, list[str]], rows: int) -> dict[str, list[str]]:
+    Dictionary_A: dict[str, list[str]] = {}
+    for columns in rows[N]:
+        List_A: list[str] = []
+        List_A.append(column[row[N]])
+    List_A = Dictionary_A
+    return Dictionary_A
