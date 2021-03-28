@@ -41,9 +41,10 @@ def columnar(rows: list[dict[str, str]]) -> dict[str, list[str]]:
 def head(columns: dict[str, list[str]], rows: int) -> dict[str, list[str]]:
     Dictionary_A: dict[str, list[str]] = {}
     i = 29
+    rows = 29
     while i < 147:
         N: list[str] = []
-        for row(1,6) in columns:
+        for rows in columns:
             N.append(row)
             i += 1
     Dictionary_A[column] = N
