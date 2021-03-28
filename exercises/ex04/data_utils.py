@@ -50,3 +50,6 @@ def head(columns: dict[str, list[str]], rows: int) -> dict[str, list[str]]:
             N.append(column_values[i])
         Dictionary_A[column] = N
     return Dictionary_A
+
+
+def select()
