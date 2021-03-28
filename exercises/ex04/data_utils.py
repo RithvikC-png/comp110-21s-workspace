@@ -40,12 +40,11 @@ def columnar(rows: list[dict[str, str]]) -> dict[str, list[str]]:
 
 def head(columns: dict[str, list[str]], rows: int) -> dict[str, list[str]]:
     """Create a table of values under each header."""
-    rows: int = (0)
     Dictionary_A: dict[str, list[str]] = {}
     for column in columns:
         N: list[str] = []
         for rows in column:
-            for values in rows [1,6]:
+            for values in rows:
                 N.append(values)
             Dictionary_A[column] = N
     return Dictionary_A
