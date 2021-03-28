@@ -57,6 +57,6 @@ def select(columns: dict[str, list[str]], names: str) -> dict[str, list[str]]:
     Dictionary_Select: dict[str, list[str]] = {}
     for headers in names:
         List_A: list[str] = []
-        List_A.append[headers]
-        columns[column] = List_A
-    Dictionary_Select[headers] = List_A
+        List_A = columns[headers]
+        Dictionary_Select[headers] = List_A
+    return Dictionary_Select
