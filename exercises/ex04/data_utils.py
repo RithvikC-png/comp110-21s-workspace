@@ -65,9 +65,8 @@ def select(columns: dict[str, list[str]], names: str) -> dict[str, list[str]]:
 def count(values: list[str]) -> dict[str, int]:
     Dictionary_A: dict[str, int] = {}
     for lines in values:
-        for character in lines:
-            if character in Dictionary_A:
-                Dictionary_A[character] += 1
-            else:
-                Dictionary_A[character] = 1
+        if lines in Dictionary_A:
+            Dictionary_A[lines] += 1
+        else:
+            Dictionary_A[lines] = 1
     return Dictionary_A
