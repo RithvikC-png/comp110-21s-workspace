@@ -6,7 +6,6 @@ __author__ = "730398645"
 from csv import DictReader
 from typing import Dict
 from tabulate import tabulate
-tabulate(data_cols_head, data_cols_head.keys(), "html")
 
 
 def read_csv_rows(csv_file: str) -> list[dict[str, str]]:
@@ -43,7 +42,7 @@ def head(columns: dict[str, list[str]], rows: int) -> dict[str, list[str]]:
     Dictionary_A: dict[str, list[str]] = {}
     for column in columns:
         N: list[str] = []
-        for value in column:
-            N.append(value)
+        for word in column:
+            N.append(word)
         Dictionary_A[column] = N
     return Dictionary_A
