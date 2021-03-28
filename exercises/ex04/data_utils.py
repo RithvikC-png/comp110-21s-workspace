@@ -4,8 +4,6 @@ __author__ = "730398645"
 
 
 from csv import DictReader
-from typing import Dict
-from tabulate import tabulate
 
 
 def read_csv_rows(csv_file: str) -> list[dict[str, str]]:
@@ -52,7 +50,7 @@ def head(columns: dict[str, list[str]], rows: int) -> dict[str, list[str]]:
     return Dictionary_A
 
 
-def select(columns: dict[str, list[str]], names: str) -> dict[str, list[str]]:
+def select(columns: dict[str, list[str]], names: list[str]) -> dict[str, list[str]]:
     """A function to select particular columns."""
     Dictionary_Select: dict[str, list[str]] = {}
     for headers in names:
