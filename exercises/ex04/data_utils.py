@@ -52,4 +52,11 @@ def head(columns: dict[str, list[str]], rows: int) -> dict[str, list[str]]:
     return Dictionary_A
 
 
-def select()
+def select(columns: dict[str, list[str]], names: str) -> dict[str, list[str]]:
+    """A function to select particular columns."""
+    Dictionary_Select: dict[str, list[str]] = {}
+    for headers in names:
+        List_A: list[str] = []
+        List_A.append[headers]
+        columns[column] = List_A
+    Dictionary_Select[headers] = List_A
