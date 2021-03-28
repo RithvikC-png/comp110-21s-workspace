@@ -42,11 +42,11 @@ def head(columns: dict[str, list[str]], rows: int) -> dict[str, list[str]]:
     """Create a table of values under each header."""
     Dictionary_A: dict[str, list[str]] = {}
     for column in columns:
-        N_values: list[str] = []
+        N: list[str] = []
         column_values = columns[column]
         if rows >= len(column_values):
             rows = len(column_values)
         for i in range(rows):
-            N_values.append(column_values[i])
-        Dictionary_A[column] = N_values
+            N.append(column_values[i])
+        Dictionary_A[column] = N
     return Dictionary_A
