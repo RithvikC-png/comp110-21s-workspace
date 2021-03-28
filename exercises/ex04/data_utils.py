@@ -43,6 +43,6 @@ def head(columns: dict[str, list[str]], rows: int) -> dict[str, list[str]]:
     for column in columns:
         N: list[str] = []
         for value in column:
-            N.append(rows[6])
+            N.append(rows)
         Dictionary_A[column] = N
     return Dictionary_A
