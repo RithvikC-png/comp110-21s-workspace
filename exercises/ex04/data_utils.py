@@ -38,13 +38,11 @@ def columnar(rows: list[dict[str, str]]) -> dict[str, list[str]]:
     return table
 
 
-head(columns, (1,6))
-
 def head(columns: dict[str, list[str]], rows: int) -> dict[str, list[str]]:
     Dictionary_A: dict[str, list[str]] = {}
     for column in columns:
         N: list[str] = []
-        for str in column:
+        for str in rows:
             N.append(str)
-        Dictionary_A[column] = N
+        Dictionary_A[rows] = N
     return Dictionary_A
