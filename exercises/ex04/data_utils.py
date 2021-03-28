@@ -44,5 +44,5 @@ def head(columns: dict[str, list[str]], rows: int) -> dict[str, list[str]]:
         N: list[str] = []
         for value in column:
             N.append(value)
-        Dictionary_A[value] = N
+        Dictionary_A[column] = N
     return Dictionary_A
