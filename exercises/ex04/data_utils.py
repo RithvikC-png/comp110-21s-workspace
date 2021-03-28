@@ -47,6 +47,6 @@ def head(columns: dict[str, list[str]], rows: int) -> dict[str, list[str]]:
         if rows >= len(column_values):
             rows = len(column_values)
         for i in range(rows):
-            N_values.append(values)
+            N_values.append(column_values[i])
         Dictionary_A[column] = N_values
     return Dictionary_A
