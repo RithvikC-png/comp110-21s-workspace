@@ -63,6 +63,7 @@ def select(columns: dict[str, list[str]], names: str) -> dict[str, list[str]]:
 
 
 def count(values: list[str]) -> dict[str, int]:
+    """Display the number of each category."""
     Dictionary_A: dict[str, int] = {}
     for lines in values:
         if lines in Dictionary_A:
@@ -70,3 +71,5 @@ def count(values: list[str]) -> dict[str, int]:
         else:
             Dictionary_A[lines] = 1
     return Dictionary_A
+
+
