@@ -67,4 +67,4 @@ def count(values: list[str]) -> dict[str, int]:
             Dictionary_A[lines] += 1
         else:
             Dictionary_A[lines] = 1
-    return Dictionary_A
+    return Dictionary_A 
