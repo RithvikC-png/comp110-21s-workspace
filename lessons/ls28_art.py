@@ -23,11 +23,11 @@ def branch(length: float, angle: float) -> None:
         branch(length * 0.6, angle + 25)
         branch(length * 0.65, angle - 20)
     t.setheading(angle + 180)
+    t.forward(length)
 
 
 if __name__ == "__main__":
     t.speed(5)
-    t.getscreen().tracer(0, 0)
-    t.getscreen().setup(width = 0.5, height = 0.5, startx = 1180, starty = 140)
+    t.getscreen().setup(width = 0.5, height = 0.5, startx = 900, starty = 90)
     tree(0, 0)
     done()
