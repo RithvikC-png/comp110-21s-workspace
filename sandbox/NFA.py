@@ -8,6 +8,7 @@ def start() -> None:
     start_state = ""
     accepted_states = ""
     transition = {}
+    nfa_transition = {}
 
     # Collecting the 5-tuple
     print("Enter the states of the NFA spearated by spaces: ", end = "")
@@ -15,6 +16,7 @@ def start() -> None:
 
     print("Enter the alphabet for the NFA separated by spaces: ", end = "")
     alphabet = input().split()
+    alphabet.append("EPSILON")
 
     print("Enter the start state of the NFA: ", end = "")
     start_state = input()
@@ -54,6 +56,14 @@ def start() -> None:
         transition_function(transition, transition_input, accepted_states, start_state, i)
         input_string()
 
+
+    def check_doubles(transition) -> None:
+        for transition in transition:
+            for tran in transition:
+                # if(transition[k] == tran[k]):
+                print(transition)
+                print(trans)
+
 # Moving transition collection to bring input_string into its scope
     while(len(transition) < len(states) * len(alphabet)):
         print("Enter the transition, type LEAVE if you are done entering transitions(origin, transition, destination): ", end = "")
@@ -61,8 +71,10 @@ def start() -> None:
         trans = temp.split()
         if(temp == "LEAVE"):
             input_string()
+            check_doubles(transition)
         else:
-            transition[(trans[0], trans[1])] = trans[2]
+            transition[trans[0], trans[1]] = trans[2]
+            print(transition)
 
     input_string()
 
