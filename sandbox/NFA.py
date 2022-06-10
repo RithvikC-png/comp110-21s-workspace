@@ -28,19 +28,7 @@ def start() -> None:
     def transition_function(transition, input, accept, active, i) -> None:
         amount = 0
 
-        for j in range(len(input)):
-            for char in input:
-            #   Checking each possibile transition, not sure about time complexity but shouldn't exceed n^2
-                for each in transition[active][char]:
-                    if(each < len(transition)):
-                        active = each
-                        if(j == len(input) - 1):
-                            for state in accept:
-                                if(active == state):
-                                    amount += 1
-                        transition_function(transition, input[i+1:], accept, active, i)
-                i += 1
-
+        
         if(amount > 0):
             print("Accepted")
         else:

@@ -35,7 +35,6 @@ def start() -> None:
 
     def transition_function(a) -> None:
         active_state = start_state
-        amount = 0
 
         for char in a:
             active_state = transition[(active_state, char)]
